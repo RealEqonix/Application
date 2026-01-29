@@ -1,4 +1,4 @@
---NOTE: THIS CONTAINS AI GENERATED PRINTS AND COMMENTS, TO HELP DEBUG. NOTHING PHYSICAL IS AI-GENERATED!
+--NOTE: THIS CONTAINS AI GENERATED PRINTS, TO HELP DEBUG. NOTHING PHYSICAL, NOR COMMENTS IS AI-GENERATED!
 
 local DataManager = require(ServerScriptService.Data.DataManager)
 local ModuleLoader = require(ServerScriptService.ModuleLoader)
@@ -26,17 +26,14 @@ local playlist = workspace.music
 -- Events
 local PlayerAfterimageEvent = ReplicatedStorage.Events:WaitForChild("PlayerAfterimage")
 
--- ============================
 -- Helper functions
--- ============================
-
 local function softRestart()
 	for _, player in ipairs(Players:GetPlayers()) do
 		player:Kick("Restarting the game...")
 	end
 end
 
--- Safely get a player's Shout Frame
+-- Get a player's Shout Frame
 local function getShout(plr)
 	if not plr then return nil end
 
@@ -45,7 +42,7 @@ local function getShout(plr)
 	return gui.Base.Shout
 end
 
--- Safely update a player's shout text
+-- Update a player's shout text
 local function updateShout(plr, msg)
 	local shout = getShout(plr)
 	if not shout then
@@ -196,9 +193,7 @@ end
 
 startSong()
 
--- ============================
 -- Main round loop
--- ============================
 local function startLoop()	
 	print("[ROUND] startLoop ENTERED")
 	
@@ -385,9 +380,7 @@ local function startLoop()
 	return false
 end
 
--- ============================
 -- Player updates
--- ============================
 
 RoundManager.MIN_PLAYERS = MIN_PLAYERS
 RoundManager.StartLoop = startLoop
