@@ -1,4 +1,7 @@
 --NOTE: THIS CONTAINS AI GENERATED PRINTS, TO HELP DEBUG. NOTHING PHYSICAL, NOR COMMENTS IS AI-GENERATED!
+--[[
+	Made by: Discord("theodor.la"), ROBLOX("Blockig599")
+]]
 
 local DataManager = require(ServerScriptService.Data.DataManager)
 local ModuleLoader = require(ServerScriptService.ModuleLoader)
